@@ -16,7 +16,7 @@ Follow the steps below to download and execute the script.
 Use the `wget` command to download the script from this repository.
 
 ```bash
-wget https://raw.githubusercontent.com/emleonid/ls-os-init/main/setup.sh
+wget https://raw.githubusercontent.com/emleonid/ls-os-init/dev/setup.sh
 ```
 
 ### Step 2: Make the Script Executable
