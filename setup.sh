@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Reload
+sudo systemctl daemon-reload
+
 # Update the package list
 sudo apt update
 
@@ -22,12 +25,12 @@ NEW_FAVORITES=$(echo "$NEW_FAVORITES" | sed "s/'libreoffice-writer.desktop',//g"
 gsettings set org.gnome.shell favorite-apps "$NEW_FAVORITES"
 
 sudo apt-get remove --purge thunderbird -y
+sudo snap remove thunderbird
 rm -rf ~/.thunderbird
 
 ### Customize GNOME UI
 
 # Set theme to Olive
-
 gsettings set org.gnome.shell.ubuntu color-scheme 'default'
 gsettings set org.gnome.desktop.interface gtk-theme Yaru-olive
 gsettings set org.gnome.desktop.interface color-scheme 'default'
@@ -56,7 +59,7 @@ sudo apt install -y curl git tree openjdk-17-jdk
 sudo snap install chromium --channel=latest/stable
 sudo snap install rider --channel=2024.1/stable --classic
 sudo snap install webstorm --channel=2024.1/stable --classic
-sudo snap install code --channel=latest/stable
+sudo snap install code --channel=latest/stable --classic
 sudo snap install okular --channel=latest/stable
 sudo snap install htop --channel=latest/stable
 sudo snap install telegram-desktop --channel=latest/stable
