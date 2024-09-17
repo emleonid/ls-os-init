@@ -70,6 +70,7 @@ sudo snap install dotnet-sdk --channel=8.0/stable --classic
 sudo snap install dotnet-sdk --channel=7.0/stable --classic
 sudo snap install dotnet-sdk --channel=6.0/stable --classic
 sudo snap install dbeaver-ce --channel=latest/stable
+sudo snap install docker --channel=latest/stable
 
 # Finish moves
 gsettings set org.gnome.shell favorite-apps "['firefox_firefox.desktop', 'chromium_chromium.desktop', 'slack_slack.desktop', 'teams-for-linux_teams-for-linux.desktop', 'telegram-desktop_telegram-desktop.desktop', 'rider_rider.desktop', 'webstorm_webstorm.desktop', 'dbeaver-ce_dbeaver-ce.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop']"
