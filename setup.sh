@@ -74,14 +74,14 @@ sudo snap install dbeaver-ce --channel=latest/stable
 # Finish moves
 gsettings set org.gnome.shell favorite-apps "['firefox_firefox.desktop', 'chromium_chromium.desktop', 'slack_slack.desktop', 'teams-for-linux_teams-for-linux.desktop', 'telegram-desktop_telegram-desktop.desktop', 'rider_rider.desktop', 'webstorm_webstorm.desktop', 'dbeaver-ce_dbeaver-ce.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop']"
 
-wget https://raw.githubusercontent.com/emleonid/ls-os-init/dev/files/frame1.png
+#wget https://raw.githubusercontent.com/emleonid/ls-os-init/dev/files/frame1.png
 wget https://raw.githubusercontent.com/emleonid/ls-os-init/dev/files/frame2.png
 
-sudo cp frame1.png /usr/share/plymouth/themes/spinner/bgrt-fallback.png
+#sudo cp frame1.png /usr/share/plymouth/themes/spinner/bgrt-fallback.png
 sudo cp frame2.png /usr/share/plymouth/themes/spinner/watermark.png
 sudo cp frame2.png /usr/share/plymouth/ubuntu-logo.png
 
-rm frame1.png
+#rm frame1.png
 rm frame2.png
 
 # Print a message when the setup is complete
